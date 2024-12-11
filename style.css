@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    width: 80%;
+    width: 90%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -113,8 +113,8 @@ header a {
 }
 
 .container .thumb .thumb-item {
-    width: 135px;
-    height: 200px;
+    width: 150px;
+    height: 210px;
     position: relative;
 }
 
@@ -123,7 +123,11 @@ header a {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    filter: brightness(80%);
+    filter: brightness(70%);
+}
+
+.container .thumb .thumb-item img:hover {
+    filter: brightness(90%);
 }
 
 .container .thumb .thumb-content {
@@ -134,7 +138,27 @@ header a {
 
 .container .arrows {
     display: flex;
+    align-items: center;
+    gap: 10px;
     position: absolute;
     bottom: 120px;
     left: 125px;
+    width: 300px;
+}
+
+.container .arrows button {
+    border-radius: 10px;
+    border: none;
+    padding: 12px 18px;
+    background-color: #eee4;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.container .arrows button:hover {
+    background-color: #eee;
+    color: #000;
+    transition: 0.5s;
 }
